@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="PmodKEYPAD">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-1-22T0:8:43</timestamp>
+    <pin polarity="BiDirectional" x="384" y="-32" name="JA(7:0)" />
+    <pin polarity="Output" x="384" y="-144" name="Keypadout(3:0)" />
+    <pin polarity="Input" x="0" y="-80" name="Clk" />
+    <graph>
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin JA(7:0)" />
+        <rect width="256" x="64" y="-180" height="180" />
+        <rect width="64" x="320" y="-44" height="24" />
+        <line x2="384" y1="-32" y2="-32" x1="320" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-200" type="symbol" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-144" type="pin Keypadout(3:0)" />
+        <rect width="64" x="320" y="-156" height="24" />
+        <line x2="384" y1="-144" y2="-144" x1="320" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-80" type="pin Clk" />
+        <line x2="0" y1="-80" y2="-80" x1="64" />
+    </graph>
+</symbol>

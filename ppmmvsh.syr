@@ -1,0 +1,2255 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: ppmmvsh.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ppmmvsh.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ppmmvsh"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : ppmmvsh
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\X74_157.vhf" into library work
+Parsing entity <M2_1E_HXILINX_X74_157>.
+Parsing architecture <M2_1E_HXILINX_X74_157_V> of entity <m2_1e_hxilinx_x74_157>.
+Parsing entity <X74_157>.
+Parsing architecture <BEHAVIORAL> of entity <x74_157>.
+Parsing VHDL file "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\Decoder.vhd" into library work
+Parsing entity <Decoder>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\X74_153.vhf" into library work
+Parsing entity <M2_1E_HXILINX_X74_153>.
+Parsing architecture <M2_1E_HXILINX_X74_153_V> of entity <m2_1e_hxilinx_x74_153>.
+Parsing entity <M2_1_HXILINX_X74_153>.
+Parsing architecture <M2_1_HXILINX_X74_153_V> of entity <m2_1_hxilinx_x74_153>.
+Parsing entity <X74_153>.
+Parsing architecture <BEHAVIORAL> of entity <x74_153>.
+Parsing VHDL file "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\SEVENSEGMENTDECODER.vhf" into library work
+Parsing entity <M2_1E_HXILINX_SEVENSEGMENTDECODER>.
+Parsing architecture <M2_1E_HXILINX_SEVENSEGMENTDECODER_V> of entity <m2_1e_hxilinx_sevensegmentdecoder>.
+Parsing entity <FTC_HXILINX_SEVENSEGMENTDECODER>.
+Parsing architecture <Behavioral> of entity <ftc_hxilinx_sevensegmentdecoder>.
+Parsing entity <X74_157_MUSER_SEVENSEGMENTDECODER>.
+Parsing architecture <BEHAVIORAL> of entity <x74_157_muser_sevensegmentdecoder>.
+Parsing entity <SEVENSEGMENTDECODER>.
+Parsing architecture <BEHAVIORAL> of entity <sevensegmentdecoder>.
+Parsing VHDL file "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\PmodKEYPAD.vhd" into library work
+Parsing entity <PmodKEYPAD>.
+Parsing architecture <Behavioral> of entity <pmodkeypad>.
+Parsing VHDL file "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\CODEGEN.vhf" into library work
+Parsing entity <COMP4_MXILINX_CODEGEN>.
+Parsing architecture <BEHAVIORAL> of entity <comp4_mxilinx_codegen>.
+Parsing entity <FD4CE_MXILINX_CODEGEN>.
+Parsing architecture <BEHAVIORAL> of entity <fd4ce_mxilinx_codegen>.
+Parsing entity <CODEGEN>.
+Parsing architecture <BEHAVIORAL> of entity <codegen>.
+Parsing VHDL file "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" into library work
+Parsing entity <COMPM2_HXILINX_ppmmvsh>.
+Parsing architecture <COMPM2_HXILINX_ppmmvsh_V> of entity <compm2_hxilinx_ppmmvsh>.
+Parsing entity <COMPM4_HXILINX_ppmmvsh>.
+Parsing architecture <COMPM4_HXILINX_ppmmvsh_V> of entity <compm4_hxilinx_ppmmvsh>.
+Parsing entity <COMPM8_HXILINX_ppmmvsh>.
+Parsing architecture <COMPM8_HXILINX_ppmmvsh_V> of entity <compm8_hxilinx_ppmmvsh>.
+Parsing entity <FD8CE_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <fd8ce_hxilinx_ppmmvsh>.
+Parsing entity <CB4CE_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_ppmmvsh>.
+Parsing entity <M2_1E_HXILINX_ppmmvsh>.
+Parsing architecture <M2_1E_HXILINX_ppmmvsh_V> of entity <m2_1e_hxilinx_ppmmvsh>.
+Parsing entity <ADD4_HXILINX_ppmmvsh>.
+Parsing architecture <ADD4_HXILINX_ppmmvsh_V> of entity <add4_hxilinx_ppmmvsh>.
+Parsing entity <ADD8_HXILINX_ppmmvsh>.
+Parsing architecture <ADD8_HXILINX_ppmmvsh_V> of entity <add8_hxilinx_ppmmvsh>.
+Parsing entity <COMP4_HXILINX_ppmmvsh>.
+Parsing architecture <COMP4_HXILINX_ppmmvsh_V> of entity <comp4_hxilinx_ppmmvsh>.
+Parsing entity <CB4CLED_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <cb4cled_hxilinx_ppmmvsh>.
+Parsing entity <M8_1E_HXILINX_ppmmvsh>.
+Parsing architecture <M8_1E_HXILINX_ppmmvsh_V> of entity <m8_1e_hxilinx_ppmmvsh>.
+Parsing entity <CD4CE_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <cd4ce_hxilinx_ppmmvsh>.
+Parsing entity <FD4CE_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <fd4ce_hxilinx_ppmmvsh>.
+Parsing entity <CB16CE_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_ppmmvsh>.
+Parsing entity <D3_8E_HXILINX_ppmmvsh>.
+Parsing architecture <D3_8E_HXILINX_ppmmvsh_V> of entity <d3_8e_hxilinx_ppmmvsh>.
+Parsing entity <M4_1E_HXILINX_ppmmvsh>.
+Parsing architecture <M4_1E_HXILINX_ppmmvsh_V> of entity <m4_1e_hxilinx_ppmmvsh>.
+Parsing entity <CB4CLE_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <cb4cle_hxilinx_ppmmvsh>.
+Parsing entity <D2_4E_HXILINX_ppmmvsh>.
+Parsing architecture <D2_4E_HXILINX_ppmmvsh_V> of entity <d2_4e_hxilinx_ppmmvsh>.
+Parsing entity <M2_1_HXILINX_ppmmvsh>.
+Parsing architecture <M2_1_HXILINX_ppmmvsh_V> of entity <m2_1_hxilinx_ppmmvsh>.
+Parsing entity <CB2CE_HXILINX_ppmmvsh>.
+Parsing architecture <Behavioral> of entity <cb2ce_hxilinx_ppmmvsh>.
+Parsing entity <COMPMC8_HXILINX_ppmmvsh>.
+Parsing architecture <COMPMC8_HXILINX_ppmmvsh_V> of entity <compmc8_hxilinx_ppmmvsh>.
+Parsing entity <X74_157_MUSER_ppmmvsh>.
+Parsing architecture <BEHAVIORAL> of entity <x74_157_muser_ppmmvsh>.
+Parsing entity <X74_153_MUSER_ppmmvsh>.
+Parsing architecture <BEHAVIORAL> of entity <x74_153_muser_ppmmvsh>.
+Parsing entity <ppmmvsh>.
+Parsing architecture <BEHAVIORAL> of entity <ppmmvsh>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ppmmvsh> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <CODEGEN> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <FD4CE_MXILINX_CODEGEN> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <COMP4_MXILINX_CODEGEN> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <X74_157> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M2_1E_HXILINX_X74_157> (architecture <M2_1E_HXILINX_X74_157_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\X74_157.vhf" Line 48. Case statement is complete. others clause is never selected
+
+Elaborating entity <SEVENSEGMENTDECODER> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <FTC_HXILINX_SEVENSEGMENTDECODER> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <X74_157_MUSER_SEVENSEGMENTDECODER> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M2_1E_HXILINX_SEVENSEGMENTDECODER> (architecture <M2_1E_HXILINX_SEVENSEGMENTDECODER_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\SEVENSEGMENTDECODER.vhf" Line 48. Case statement is complete. others clause is never selected
+
+Elaborating entity <M2_1_HXILINX_ppmmvsh> (architecture <M2_1_HXILINX_ppmmvsh_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 818. Case statement is complete. others clause is never selected
+
+Elaborating entity <CB2CE_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CB4CLE_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <D3_8E_HXILINX_ppmmvsh> (architecture <D3_8E_HXILINX_ppmmvsh_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 640. Case statement is complete. others clause is never selected
+
+Elaborating entity <CB16CE_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FD4CE_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <X74_157_MUSER_ppmmvsh> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M2_1E_HXILINX_ppmmvsh> (architecture <M2_1E_HXILINX_ppmmvsh_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 226. Case statement is complete. others clause is never selected
+
+Elaborating entity <X74_153_MUSER_ppmmvsh> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <CB4CE_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <M8_1E_HXILINX_ppmmvsh> (architecture <M8_1E_HXILINX_ppmmvsh_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 438. Case statement is complete. others clause is never selected
+
+Elaborating entity <FD8CE_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CD4CE_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ADD4_HXILINX_ppmmvsh> (architecture <ADD4_HXILINX_ppmmvsh_V>) from library <work>.
+
+Elaborating entity <M4_1E_HXILINX_ppmmvsh> (architecture <M4_1E_HXILINX_ppmmvsh_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 689. Case statement is complete. others clause is never selected
+
+Elaborating entity <COMP4_HXILINX_ppmmvsh> (architecture <COMP4_HXILINX_ppmmvsh_V>) from library <work>.
+
+Elaborating entity <ADD8_HXILINX_ppmmvsh> (architecture <ADD8_HXILINX_ppmmvsh_V>) from library <work>.
+
+Elaborating entity <PmodKEYPAD> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Decoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <COMPM4_HXILINX_ppmmvsh> (architecture <COMPM4_HXILINX_ppmmvsh_V>) from library <work>.
+
+Elaborating entity <D2_4E_HXILINX_ppmmvsh> (architecture <D2_4E_HXILINX_ppmmvsh_V>) from library <work>.
+INFO:HDLCompiler:679 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 784. Case statement is complete. others clause is never selected
+
+Elaborating entity <COMPMC8_HXILINX_ppmmvsh> (architecture <COMPMC8_HXILINX_ppmmvsh_V>) from library <work>.
+
+Elaborating entity <CB4CLED_HXILINX_ppmmvsh> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <COMPM2_HXILINX_ppmmvsh> (architecture <COMPM2_HXILINX_ppmmvsh_V>) from library <work>.
+
+Elaborating entity <COMPM8_HXILINX_ppmmvsh> (architecture <COMPM8_HXILINX_ppmmvsh_V>) from library <work>.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1349: Net <P1SKIP> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1353: Net <P2CODE0> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1354: Net <P2CODE1> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1355: Net <P2CODE2> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1356: Net <P2CODE3> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1357: Net <P2CODE4> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1358: Net <P2CODE5> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1359: Net <P2CODE6> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1360: Net <P2CODE7> does not have a driver.
+WARNING:HDLCompiler:634 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" Line 1366: Net <P2SKIP> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Set property "IOSTANDARD = DEFAULT" for instance <ADD_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <ADD_BUF>.
+    Set property "SLEW = SLOW" for instance <ADD_BUF>.
+    Set property "DRIVE = 12" for instance <ADD_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CA_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CA_BUF>.
+    Set property "SLEW = SLOW" for instance <CA_BUF>.
+    Set property "DRIVE = 12" for instance <CA_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CB_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CB_BUF>.
+    Set property "SLEW = SLOW" for instance <CB_BUF>.
+    Set property "DRIVE = 12" for instance <CB_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CC_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CC_BUF>.
+    Set property "SLEW = SLOW" for instance <CC_BUF>.
+    Set property "DRIVE = 12" for instance <CC_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CD_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CD_BUF>.
+    Set property "SLEW = SLOW" for instance <CD_BUF>.
+    Set property "DRIVE = 12" for instance <CD_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CE_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CE_BUF>.
+    Set property "SLEW = SLOW" for instance <CE_BUF>.
+    Set property "DRIVE = 12" for instance <CE_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CF_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CF_BUF>.
+    Set property "SLEW = SLOW" for instance <CF_BUF>.
+    Set property "DRIVE = 12" for instance <CF_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CG_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CG_BUF>.
+    Set property "SLEW = SLOW" for instance <CG_BUF>.
+    Set property "DRIVE = 12" for instance <CG_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <CLOCK_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <CLOCK_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <DISPEN0_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <DISPEN0_BUF>.
+    Set property "SLEW = SLOW" for instance <DISPEN0_BUF>.
+    Set property "DRIVE = 12" for instance <DISPEN0_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <DISPEN1_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <DISPEN1_BUF>.
+    Set property "SLEW = SLOW" for instance <DISPEN1_BUF>.
+    Set property "DRIVE = 12" for instance <DISPEN1_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <DISPEN2_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <DISPEN2_BUF>.
+    Set property "SLEW = SLOW" for instance <DISPEN2_BUF>.
+    Set property "DRIVE = 12" for instance <DISPEN2_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <DISPEN3_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <DISPEN3_BUF>.
+    Set property "SLEW = SLOW" for instance <DISPEN3_BUF>.
+    Set property "DRIVE = 12" for instance <DISPEN3_BUF>.
+    Set property "HU_SET = M7_46" for instance <M7>.
+    Set property "HU_SET = M8_47" for instance <M8>.
+    Set property "HU_SET = M9_48" for instance <M9>.
+    Set property "HU_SET = M10_49" for instance <M10>.
+    Set property "IOSTANDARD = DEFAULT" for instance <P1PLAY_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <P1PLAY_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <P2PLAY_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <P2PLAY_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <RD0_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <RD0_BUF>.
+    Set property "SLEW = SLOW" for instance <RD0_BUF>.
+    Set property "DRIVE = 12" for instance <RD0_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <RD1_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <RD1_BUF>.
+    Set property "SLEW = SLOW" for instance <RD1_BUF>.
+    Set property "DRIVE = 12" for instance <RD1_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <RD2_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <RD2_BUF>.
+    Set property "SLEW = SLOW" for instance <RD2_BUF>.
+    Set property "DRIVE = 12" for instance <RD2_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <RD3_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <RD3_BUF>.
+    Set property "SLEW = SLOW" for instance <RD3_BUF>.
+    Set property "DRIVE = 12" for instance <RD3_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <RESET_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <RESET_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <SHPTS_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <SHPTS_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <STR0_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <STR0_BUF>.
+    Set property "SLEW = SLOW" for instance <STR0_BUF>.
+    Set property "DRIVE = 12" for instance <STR0_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <STR1_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <STR1_BUF>.
+    Set property "SLEW = SLOW" for instance <STR1_BUF>.
+    Set property "DRIVE = 12" for instance <STR1_BUF>.
+    Set property "IOSTANDARD = DEFAULT" for instance <STR2_BUF>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <STR2_BUF>.
+    Set property "SLEW = SLOW" for instance <STR2_BUF>.
+    Set property "DRIVE = 12" for instance <STR2_BUF>.
+    Set property "HU_SET = U6_39" for instance <U6>.
+    Set property "HU_SET = U64_37" for instance <U64>.
+    Set property "HU_SET = U65_38" for instance <U65>.
+    Set property "HU_SET = U66_21" for instance <U66>.
+    Set property "HU_SET = U67_22" for instance <U67>.
+    Set property "HU_SET = U69_23" for instance <U69>.
+    Set property "HU_SET = U86_40" for instance <U86>.
+    Set property "INIT = 2812" for instance <U104>.
+    Set property "INIT = D860" for instance <U105>.
+    Set property "INIT = D004" for instance <U106>.
+    Set property "INIT = 8692" for instance <U107>.
+    Set property "INIT = 02BA" for instance <U108>.
+    Set property "INIT = 208E" for instance <U109>.
+    Set property "INIT = 1083" for instance <U110>.
+    Set property "HU_SET = U112_66" for instance <U112>.
+    Set property "HU_SET = U113_17" for instance <U113>.
+    Set property "HU_SET = U114_18" for instance <U114>.
+    Set property "HU_SET = U115_19" for instance <U115>.
+    Set property "HU_SET = U116_20" for instance <U116>.
+    Set property "HU_SET = U117_14" for instance <U117>.
+    Set property "HU_SET = U118_15" for instance <U118>.
+    Set property "HU_SET = U119_13" for instance <U119>.
+    Set property "HU_SET = U120_12" for instance <U120>.
+    Set property "HU_SET = U121_11" for instance <U121>.
+    Set property "HU_SET = U122_10" for instance <U122>.
+    Set property "HU_SET = U148_27" for instance <U148>.
+    Set property "HU_SET = U149_26" for instance <U149>.
+    Set property "HU_SET = U150_24" for instance <U150>.
+    Set property "HU_SET = U151_25" for instance <U151>.
+    Set property "HU_SET = U155_16" for instance <U155>.
+    Set property "HU_SET = U159_30" for instance <U159>.
+    Set property "HU_SET = U160_31" for instance <U160>.
+    Set property "HU_SET = U161_29" for instance <U161>.
+    Set property "HU_SET = U162_28" for instance <U162>.
+    Set property "HU_SET = U169_33" for instance <U169>.
+    Set property "HU_SET = U171_34" for instance <U171>.
+    Set property "HU_SET = U176_32" for instance <U176>.
+    Set property "HU_SET = U181_36" for instance <U181>.
+    Set property "HU_SET = U182_35" for instance <U182>.
+    Set property "HU_SET = U295_41" for instance <U295>.
+    Set property "HU_SET = U296_42" for instance <U296>.
+    Set property "HU_SET = U297_44" for instance <U297>.
+    Set property "HU_SET = U298_43" for instance <U298>.
+    Set property "HU_SET = U299_45" for instance <U299>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1509>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1509>.
+    Set property "SLEW = SLOW" for instance <XLXI_1509>.
+    Set property "DRIVE = 12" for instance <XLXI_1509>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1510>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1510>.
+    Set property "SLEW = SLOW" for instance <XLXI_1510>.
+    Set property "DRIVE = 12" for instance <XLXI_1510>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1511>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1511>.
+    Set property "SLEW = SLOW" for instance <XLXI_1511>.
+    Set property "DRIVE = 12" for instance <XLXI_1511>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1512>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1512>.
+    Set property "SLEW = SLOW" for instance <XLXI_1512>.
+    Set property "DRIVE = 12" for instance <XLXI_1512>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1814>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1814>.
+    Set property "SLEW = SLOW" for instance <XLXI_1814>.
+    Set property "DRIVE = 12" for instance <XLXI_1814>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1884>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1884>.
+    Set property "SLEW = SLOW" for instance <XLXI_1884>.
+    Set property "DRIVE = 12" for instance <XLXI_1884>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1885>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1885>.
+    Set property "SLEW = SLOW" for instance <XLXI_1885>.
+    Set property "DRIVE = 12" for instance <XLXI_1885>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1886>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1886>.
+    Set property "SLEW = SLOW" for instance <XLXI_1886>.
+    Set property "DRIVE = 12" for instance <XLXI_1886>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1887>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1887>.
+    Set property "SLEW = SLOW" for instance <XLXI_1887>.
+    Set property "DRIVE = 12" for instance <XLXI_1887>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1888>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1888>.
+    Set property "SLEW = SLOW" for instance <XLXI_1888>.
+    Set property "DRIVE = 12" for instance <XLXI_1888>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1889>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1889>.
+    Set property "SLEW = SLOW" for instance <XLXI_1889>.
+    Set property "DRIVE = 12" for instance <XLXI_1889>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1890>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1890>.
+    Set property "SLEW = SLOW" for instance <XLXI_1890>.
+    Set property "DRIVE = 12" for instance <XLXI_1890>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_2201>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_2201>.
+    Set property "HU_SET = XLXI_2305_68" for instance <XLXI_2305>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_2347>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_2347>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_2348>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_2348>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_2349>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_2349>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_2350>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_2350>.
+    Set property "HU_SET = XLXI_2365_50" for instance <XLXI_2365>.
+    Set property "HU_SET = XLXI_2366_51" for instance <XLXI_2366>.
+    Set property "HU_SET = XLXI_2371_52" for instance <XLXI_2371>.
+    Set property "HU_SET = XLXI_2372_53" for instance <XLXI_2372>.
+    Set property "HU_SET = XLXI_2387_70" for instance <XLXI_2387>.
+    Set property "HU_SET = XLXI_2393_69" for instance <XLXI_2393>.
+    Set property "HU_SET = XLXI_2434_64" for instance <XLXI_2434>.
+    Set property "HU_SET = XLXI_2435_65" for instance <XLXI_2435>.
+    Set property "HU_SET = XLXI_2436_63" for instance <XLXI_2436>.
+    Set property "HU_SET = XLXI_2454_57" for instance <XLXI_2454>.
+    Set property "HU_SET = XLXI_2461_67" for instance <XLXI_2461>.
+    Set property "HU_SET = XLXI_2482_54" for instance <XLXI_2482>.
+    Set property "HU_SET = XLXI_2490_59" for instance <XLXI_2490>.
+    Set property "HU_SET = XLXI_2516_60" for instance <XLXI_2516>.
+    Set property "HU_SET = XLXI_2526_56" for instance <XLXI_2526>.
+    Set property "HU_SET = XLXI_2582_55" for instance <XLXI_2582>.
+    Set property "HU_SET = XLXI_2638_58" for instance <XLXI_2638>.
+    Set property "HU_SET = XLXI_2644_61" for instance <XLXI_2644>.
+    Set property "HU_SET = XLXI_2646_62" for instance <XLXI_2646>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_2868>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_2868>.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2330: Output port <O> of the instance <P2STURN_BUF> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2406: Output port <O> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2432: Output port <CEO> of the instance <U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2432: Output port <Q0> of the instance <U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2432: Output port <Q1> of the instance <U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2753: Output port <CEO> of the instance <U64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2753: Output port <Q3> of the instance <U64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2753: Output port <TC> of the instance <U64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2769: Output port <D7> of the instance <U65> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2783: Output port <CEO> of the instance <U66> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2783: Output port <TC> of the instance <U66> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2791: Output port <CEO> of the instance <U67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2791: Output port <TC> of the instance <U67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2975: Output port <CEO> of the instance <U86> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2975: Output port <Q3> of the instance <U86> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 2975: Output port <TC> of the instance <U86> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3196: Output port <CEO> of the instance <U119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3196: Output port <Q0> of the instance <U119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3196: Output port <TC> of the instance <U119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3246: Output port <OFL> of the instance <U148> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3263: Output port <OFL> of the instance <U149> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3280: Output port <OFL> of the instance <U150> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3297: Output port <OFL> of the instance <U151> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3498: Output port <CO> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3498: Output port <OFL> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3498: Output port <S2> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3498: Output port <S3> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3607: Output port <OFL> of the instance <U181> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 3615: Output port <OFL> of the instance <U182> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4011: Output port <GT> of the instance <XLXI_2366> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4061: Output port <GT> of the instance <XLXI_2371> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4073: Output port <GT> of the instance <XLXI_2372> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4085: Output port <O> of the instance <XLXI_2373> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4121: Output port <O> of the instance <XLXI_2379> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4148: Output port <O> of the instance <XLXI_2385> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4267: Output port <LT> of the instance <XLXI_2454> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4281: Output port <GT> of the instance <XLXI_2461> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4344: Output port <S> of the instance <XLXI_2482> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4344: Output port <OFL> of the instance <XLXI_2482> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4364: Output port <CEO> of the instance <XLXI_2490> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4364: Output port <TC> of the instance <XLXI_2490> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4423: Output port <Q3> of the instance <XLXI_2526> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4448: Output port <O> of the instance <XLXI_2530> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4453: Output port <O> of the instance <XLXI_2531> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4458: Output port <O> of the instance <XLXI_2532> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4463: Output port <O> of the instance <XLXI_2533> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4558: Output port <Q2> of the instance <XLXI_2638> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4558: Output port <Q3> of the instance <XLXI_2638> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4578: Output port <LT> of the instance <XLXI_2644> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf" line 4586: Output port <LT> of the instance <XLXI_2646> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <P1SKIP> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE3> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE4> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE5> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE6> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE7> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2SKIP> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ppmmvsh> synthesized.
+
+Synthesizing Unit <CODEGEN>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\CODEGEN.vhf".
+    Set property "HU_SET = U123_8" for instance <U123>.
+    Set property "HU_SET = U126_7" for instance <U126>.
+    Set property "HU_SET = U127_10" for instance <U127>.
+    Set property "HU_SET = U128_11" for instance <U128>.
+    Set property "HU_SET = U129_9" for instance <U129>.
+    Set property "HU_SET = U130_12" for instance <U130>.
+    Summary:
+	no macro.
+Unit <CODEGEN> synthesized.
+
+Synthesizing Unit <FD4CE_MXILINX_CODEGEN>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\CODEGEN.vhf".
+    Summary:
+	no macro.
+Unit <FD4CE_MXILINX_CODEGEN> synthesized.
+
+Synthesizing Unit <COMP4_MXILINX_CODEGEN>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\CODEGEN.vhf".
+    Summary:
+	no macro.
+Unit <COMP4_MXILINX_CODEGEN> synthesized.
+
+Synthesizing Unit <X74_157>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\X74_157.vhf".
+    Set property "HU_SET = XLXI_114_6" for instance <XLXI_114>.
+    Set property "HU_SET = XLXI_115_7" for instance <XLXI_115>.
+    Set property "HU_SET = XLXI_116_8" for instance <XLXI_116>.
+    Set property "HU_SET = XLXI_117_9" for instance <XLXI_117>.
+    Summary:
+	no macro.
+Unit <X74_157> synthesized.
+
+Synthesizing Unit <M2_1E_HXILINX_X74_157>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\X74_157.vhf".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M2_1E_HXILINX_X74_157> synthesized.
+
+Synthesizing Unit <SEVENSEGMENTDECODER>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\SEVENSEGMENTDECODER.vhf".
+    Set property "INIT = 2812" for instance <U1>.
+    Set property "INIT = D860" for instance <U2>.
+    Set property "INIT = D004" for instance <U3>.
+    Set property "INIT = 8692" for instance <U4>.
+    Set property "INIT = 02BA" for instance <U5>.
+    Set property "INIT = 208E" for instance <U6>.
+    Set property "INIT = 1083" for instance <U7>.
+    Set property "HU_SET = XLXI_10_4" for instance <XLXI_10>.
+    Summary:
+	no macro.
+Unit <SEVENSEGMENTDECODER> synthesized.
+
+Synthesizing Unit <FTC_HXILINX_SEVENSEGMENTDECODER>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\SEVENSEGMENTDECODER.vhf".
+        INIT = '0'
+    Found 1-bit register for signal <q_tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FTC_HXILINX_SEVENSEGMENTDECODER> synthesized.
+
+Synthesizing Unit <X74_157_MUSER_SEVENSEGMENTDECODER>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\SEVENSEGMENTDECODER.vhf".
+    Set property "HU_SET = XLXI_114_0" for instance <XLXI_114>.
+    Set property "HU_SET = XLXI_115_1" for instance <XLXI_115>.
+    Set property "HU_SET = XLXI_116_2" for instance <XLXI_116>.
+    Set property "HU_SET = XLXI_117_3" for instance <XLXI_117>.
+    Summary:
+	no macro.
+Unit <X74_157_MUSER_SEVENSEGMENTDECODER> synthesized.
+
+Synthesizing Unit <M2_1E_HXILINX_SEVENSEGMENTDECODER>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\SEVENSEGMENTDECODER.vhf".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M2_1E_HXILINX_SEVENSEGMENTDECODER> synthesized.
+
+Synthesizing Unit <M2_1_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <M2_1_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <CB2CE_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 2-bit register for signal <COUNT>.
+    Found 2-bit adder for signal <COUNT[1]_GND_18_o_add_0_OUT> created at line 856.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <CB2CE_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <CB4CLE_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_19_o_add_0_OUT> created at line 735.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <CB4CLE_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <D3_8E_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <D3_8E_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <CB16CE_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 16-bit register for signal <COUNT>.
+    Found 16-bit adder for signal <COUNT[15]_GND_21_o_add_0_OUT> created at line 586.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <CB16CE_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <FD4CE_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <Q3>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <FD4CE_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <X74_157_MUSER_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Set property "HU_SET = XLXI_114_0" for instance <XLXI_114>.
+    Set property "HU_SET = XLXI_115_1" for instance <XLXI_115>.
+    Set property "HU_SET = XLXI_116_2" for instance <XLXI_116>.
+    Set property "HU_SET = XLXI_117_3" for instance <XLXI_117>.
+    Summary:
+	no macro.
+Unit <X74_157_MUSER_ppmmvsh> synthesized.
+
+Synthesizing Unit <M2_1E_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M2_1E_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <X74_153_MUSER_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Set property "HU_SET = XLXI_1_4" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_5" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_6" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_7" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_8" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_9" for instance <XLXI_6>.
+    Summary:
+	no macro.
+Unit <X74_153_MUSER_ppmmvsh> synthesized.
+
+Synthesizing Unit <CB4CE_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_26_o_add_0_OUT> created at line 184.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <CB4CE_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <M8_1E_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 1-bit 8-to-1 multiplexer for signal <S2_D7_Mux_0_o> created at line 429.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M8_1E_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <FD8CE_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 8-bit register for signal <Q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <FD8CE_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <CD4CE_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_29_o_add_4_OUT> created at line 489.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+Unit <CD4CE_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <ADD4_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 5-bit adder for signal <n0024> created at line 268.
+    Found 5-bit adder for signal <adsu_p.adsu_tmp> created at line 268.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ADD4_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <M4_1E_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 684.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M4_1E_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <COMP4_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Summary:
+Unit <COMP4_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <ADD8_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 9-bit adder for signal <n0022> created at line 300.
+    Found 9-bit adder for signal <adder_tmp> created at line 300.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ADD8_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <PmodKEYPAD>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\PmodKEYPAD.vhd".
+    Summary:
+	no macro.
+Unit <PmodKEYPAD> synthesized.
+
+Synthesizing Unit <Decoder>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\Decoder.vhd".
+    Found 20-bit register for signal <sclk>.
+    Found 4-bit register for signal <DecodeOut>.
+    Found 4-bit register for signal <Col>.
+    Found 20-bit adder for signal <sclk[19]_GND_35_o_add_47_OUT> created at line 124.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred  13 Multiplexer(s).
+Unit <Decoder> synthesized.
+
+Synthesizing Unit <COMPM4_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 4-bit comparator greater for signal <GT> created at line 86
+    Found 4-bit comparator greater for signal <LT> created at line 87
+    Summary:
+	inferred   2 Comparator(s).
+Unit <COMPM4_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <D2_4E_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <D2_4E_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <COMPMC8_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 8-bit comparator greater for signal <GT> created at line 888
+    Found 8-bit comparator greater for signal <LT> created at line 889
+    Summary:
+	inferred   2 Comparator(s).
+Unit <COMPMC8_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <CB4CLED_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_39_o_add_0_OUT> created at line 375.
+    Found 4-bit subtractor for signal <GND_39_o_GND_39_o_sub_2_OUT<3:0>> created at line 377.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <CB4CLED_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <COMPM2_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 2-bit comparator greater for signal <GT> created at line 50
+    Found 2-bit comparator greater for signal <LT> created at line 51
+    Summary:
+	inferred   2 Comparator(s).
+Unit <COMPM2_HXILINX_ppmmvsh> synthesized.
+
+Synthesizing Unit <COMPM8_HXILINX_ppmmvsh>.
+    Related source file is "\\cse001-wfp\home$\jl8456\Exp 3 - Copy\ppmmvsh\ppmmvsh.vhf".
+    Found 8-bit comparator greater for signal <GT> created at line 109
+    Found 8-bit comparator greater for signal <LT> created at line 110
+    Summary:
+	inferred   2 Comparator(s).
+Unit <COMPM8_HXILINX_ppmmvsh> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 24
+ 16-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 4-bit adder                                           : 3
+ 4-bit addsub                                          : 1
+ 5-bit adder                                           : 10
+ 9-bit adder                                           : 6
+# Registers                                            : 54
+ 1-bit register                                        : 41
+ 16-bit register                                       : 2
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 4-bit register                                        : 6
+ 8-bit register                                        : 3
+# Comparators                                          : 14
+ 2-bit comparator greater                              : 2
+ 4-bit comparator greater                              : 6
+ 8-bit comparator greater                              : 6
+# Multiplexers                                         : 210
+ 1-bit 2-to-1 multiplexer                              : 174
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 8-to-1 multiplexer                              : 5
+ 4-bit 2-to-1 multiplexer                              : 26
+ 8-bit 2-to-1 multiplexer                              : 3
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CB16CE_HXILINX_ppmmvsh>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB16CE_HXILINX_ppmmvsh> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB2CE_HXILINX_ppmmvsh>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB2CE_HXILINX_ppmmvsh> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB4CE_HXILINX_ppmmvsh>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB4CE_HXILINX_ppmmvsh> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB4CLED_HXILINX_ppmmvsh>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB4CLED_HXILINX_ppmmvsh> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB4CLE_HXILINX_ppmmvsh>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB4CLE_HXILINX_ppmmvsh> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Decoder>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+Unit <Decoder> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 4-bit adder                                           : 1
+ 5-bit adder carry in                                  : 5
+ 9-bit adder carry in                                  : 3
+# Counters                                             : 7
+ 16-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 4-bit updown counter                                  : 1
+# Registers                                            : 101
+ Flip-Flops                                            : 101
+# Comparators                                          : 14
+ 2-bit comparator greater                              : 2
+ 4-bit comparator greater                              : 6
+ 8-bit comparator greater                              : 6
+# Multiplexers                                         : 164
+ 1-bit 2-to-1 multiplexer                              : 130
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 8-to-1 multiplexer                              : 5
+ 4-bit 2-to-1 multiplexer                              : 24
+ 8-bit 2-to-1 multiplexer                              : 3
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ppmmvsh> ...
+
+Optimizing unit <CODEGEN> ...
+
+Optimizing unit <COMP4_MXILINX_CODEGEN> ...
+
+Optimizing unit <FD4CE_MXILINX_CODEGEN> ...
+
+Optimizing unit <FD4CE_HXILINX_ppmmvsh> ...
+
+Optimizing unit <FD8CE_HXILINX_ppmmvsh> ...
+
+Optimizing unit <X74_153_MUSER_ppmmvsh> ...
+
+Optimizing unit <SEVENSEGMENTDECODER> ...
+
+Optimizing unit <Decoder> ...
+
+Optimizing unit <M8_1E_HXILINX_ppmmvsh> ...
+
+Optimizing unit <M2_1E_HXILINX_ppmmvsh> ...
+
+Optimizing unit <CB4CLE_HXILINX_ppmmvsh> ...
+
+Optimizing unit <M2_1_HXILINX_ppmmvsh> ...
+
+Optimizing unit <CB16CE_HXILINX_ppmmvsh> ...
+
+Optimizing unit <M2_1E_HXILINX_X74_157> ...
+
+Optimizing unit <D3_8E_HXILINX_ppmmvsh> ...
+
+Optimizing unit <ADD4_HXILINX_ppmmvsh> ...
+
+Optimizing unit <M2_1E_HXILINX_SEVENSEGMENTDECODER> ...
+
+Optimizing unit <FTC_HXILINX_SEVENSEGMENTDECODER> ...
+
+Optimizing unit <M4_1E_HXILINX_ppmmvsh> ...
+
+Optimizing unit <COMP4_HXILINX_ppmmvsh> ...
+
+Optimizing unit <COMPM4_HXILINX_ppmmvsh> ...
+
+Optimizing unit <COMPMC8_HXILINX_ppmmvsh> ...
+
+Optimizing unit <ADD8_HXILINX_ppmmvsh> ...
+
+Optimizing unit <CB2CE_HXILINX_ppmmvsh> ...
+
+Optimizing unit <CB4CLED_HXILINX_ppmmvsh> ...
+
+Optimizing unit <COMPM2_HXILINX_ppmmvsh> ...
+
+Optimizing unit <D2_4E_HXILINX_ppmmvsh> ...
+
+Optimizing unit <COMPM8_HXILINX_ppmmvsh> ...
+
+Optimizing unit <CB4CE_HXILINX_ppmmvsh> ...
+
+Optimizing unit <CD4CE_HXILINX_ppmmvsh> ...
+WARNING:Xst:1293 - FF/Latch <Q_7> has a constant value of 0 in block <XLXI_2582>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <COUNT_3> of sequential type is unconnected in block <U64>.
+WARNING:Xst:2677 - Node <COUNT_9> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_10> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_11> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_12> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_13> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_14> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_15> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <Q2> of sequential type is unconnected in block <XLXI_2638>.
+WARNING:Xst:2677 - Node <Q3> of sequential type is unconnected in block <XLXI_2638>.
+WARNING:Xst:2677 - Node <Q3> of sequential type is unconnected in block <XLXI_2526>.
+WARNING:Xst:2677 - Node <COUNT_3> of sequential type is unconnected in block <U86>.
+WARNING:Xst:1290 - Hierarchical block <U173/XLXI_3> is unconnected in block <ppmmvsh>.
+   It will be removed from the design.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ppmmvsh, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 154
+ Flip-Flops                                            : 154
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ppmmvsh.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 695
+#      AND2                        : 43
+#      AND2B1                      : 11
+#      AND3                        : 7
+#      AND3B1                      : 7
+#      AND3B2                      : 3
+#      AND4                        : 4
+#      BUF                         : 27
+#      GND                         : 4
+#      INV                         : 66
+#      LUT1                        : 40
+#      LUT2                        : 56
+#      LUT3                        : 67
+#      LUT4                        : 95
+#      LUT5                        : 14
+#      LUT6                        : 34
+#      MUXCY                       : 66
+#      MUXF7                       : 5
+#      OR2                         : 32
+#      OR2B1                       : 7
+#      OR3                         : 8
+#      OR4                         : 5
+#      ROM16X1                     : 14
+#      VCC                         : 3
+#      XNOR2                       : 16
+#      XORCY                       : 61
+# FlipFlops/Latches                : 154
+#      FD                          : 6
+#      FDC                         : 4
+#      FDCE                        : 116
+#      FDE                         : 8
+#      FDR                         : 20
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 58
+#      IBUF                        : 15
+#      OBUF                        : 43
+# Logical                          : 12
+#      NAND2                       : 4
+#      NOR2                        : 2
+#      NOR3                        : 2
+#      NOR4                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             153  out of  126800     0%  
+ Number of Slice LUTs:                  386  out of  63400     0%  
+    Number used as Logic:               372  out of  63400     0%  
+    Number used as Memory:               14  out of  19000     0%  
+       Number used as ROM:               14
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    539
+   Number with an unused Flip Flop:     386  out of    539    71%  
+   Number with an unused LUT:           153  out of    539    28%  
+   Number of fully used LUT-FF pairs:     0  out of    539     0%  
+   Number of unique control sets:        37
+
+IO Utilization: 
+ Number of IOs:                          58
+ Number of bonded IOBs:                  58  out of    210    27%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+U67/COUNT_4                        | BUFG                   | 22    |
+U67/COUNT_7                        | BUFG                   | 69    |
+CLOCK_NP2B                         | IBUF+BUFG              | 44    |
+U66/COUNT_15                       | NONE(U67/COUNT_0)      | 9     |
+U67/COUNT_0                        | NONE(M5/XLXI_10/q_tmp) | 4     |
+U67/COUNT_2                        | BUFG                   | 6     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 27.571ns (Maximum Frequency: 36.270MHz)
+   Minimum input arrival time before clock: 27.441ns
+   Maximum output required time after clock: 33.138ns
+   Maximum combinational path delay: 32.920ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_7'
+  Clock period: 27.571ns (frequency: 36.270MHz)
+  Total number of paths / destination ports: 253890360 / 135
+-------------------------------------------------------------------------
+Delay:               27.571ns (Levels of Logic = 61)
+  Source:            U122/Q0 (FF)
+  Destination:       U28 (FF)
+  Source Clock:      U67/COUNT_7 rising
+  Destination Clock: U67/COUNT_7 rising
+
+  Data Path: U122/Q0 to U28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.361   0.295  Q0 (Q0)
+     end scope: 'U122:Q0'
+     begin scope: 'M7:D0'
+     LUT3:I2->O           19   0.097   0.595  Mmux_O11 (O)
+     end scope: 'M7:O'
+     OR4:I3->O             1   0.279   0.693  XLXI_2446 (RDISNOT0)
+     AND2:I0->O            1   0.097   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.698  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.516  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.698  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U174/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U174/XLXI_3:O'
+     begin scope: 'U174/XLXI_6:D0'
+     LUT4:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U174/XLXI_6:O'
+     begin scope: 'XLXI_2461:B<3>'
+     LUT4:I1->O            2   0.097   0.283  LT21 (LT)
+     end scope: 'XLXI_2461:LT'
+     INV:I->O              1   0.511   0.693  XLXI_2470 (XLXN_13037)
+     OR2:I0->O             2   0.097   0.688  XLXI_2473 (P1ADD)
+     AND2:I1->O            1   0.107   0.683  U29 (XLXN_12237)
+     OR2:I1->O             1   0.107   0.279  U31 (INT_NET10)
+     FDCE:CE                   0.095          U28
+    ----------------------------------------
+    Total                     27.571ns (6.044ns logic, 21.527ns route)
+                                       (21.9% logic, 78.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_4'
+  Clock period: 26.024ns (frequency: 38.426MHz)
+  Total number of paths / destination ports: 2697397 / 53
+-------------------------------------------------------------------------
+Delay:               26.024ns (Levels of Logic = 58)
+  Source:            XLXI_2526/Q0 (FF)
+  Destination:       XLXI_2638/Q1 (FF)
+  Source Clock:      U67/COUNT_4 rising
+  Destination Clock: U67/COUNT_4 rising
+
+  Data Path: XLXI_2526/Q0 to XLXI_2638/Q1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.698  Q0 (Q0)
+     end scope: 'XLXI_2526:Q0'
+     OR2:I0->O             1   0.097   0.683  XLXI_2391 (XLXN_12562)
+     AND2:I1->O            1   0.107   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.697  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.516  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.698  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U173/XLXI_4:S0'
+     LUT3:I0->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U173/XLXI_4:O'
+     begin scope: 'U173/XLXI_6:D1'
+     LUT3:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U173/XLXI_6:O'
+     begin scope: 'XLXI_2646:A<5>'
+     LUT6:I3->O            1   0.097   0.511  GT1_SW5 (N6)
+     LUT5:I2->O            1   0.097   0.693  GT21 (GT)
+     end scope: 'XLXI_2646:GT'
+     OR2:I0->O             1   0.097   0.683  XLXI_2529 (XLXN_13158)
+     AND2:I1->O            9   0.107   0.316  XLXI_2525 (UPDATERWD)
+     begin scope: 'XLXI_2638:CE'
+     FDCE:CE                   0.095          Q1
+    ----------------------------------------
+    Total                     26.024ns (5.254ns logic, 20.770ns route)
+                                       (20.2% logic, 79.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK_NP2B'
+  Clock period: 3.473ns (frequency: 287.960MHz)
+  Total number of paths / destination ports: 2915 / 72
+-------------------------------------------------------------------------
+Delay:               3.473ns (Levels of Logic = 5)
+  Source:            XLXI_2202/C0/sclk_14 (FF)
+  Destination:       XLXI_2202/C0/sclk_19 (FF)
+  Source Clock:      CLOCK_NP2B rising
+  Destination Clock: CLOCK_NP2B rising
+
+  Data Path: XLXI_2202/C0/sclk_14 to XLXI_2202/C0/sclk_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.361   0.383  XLXI_2202/C0/sclk_14 (XLXI_2202/C0/sclk_14)
+     LUT2:I0->O            1   0.097   0.295  XLXI_2202/C0/_n0325_inv11_SW0 (N8)
+     LUT6:I5->O            3   0.097   0.305  XLXI_2202/C0/_n0325_inv11 (XLXI_2202/C0/_n0325_inv11)
+     LUT5:I4->O            2   0.097   0.383  XLXI_2202/C0/sclk[19]_GND_35_o_equal_13_o<19>11 (XLXI_2202/C0/sclk[19]_GND_35_o_equal_13_o<19>1)
+     LUT6:I4->O            8   0.097   0.543  XLXI_2202/C0/sclk[19]_GND_35_o_equal_13_o<19>22 (XLXI_2202/C0/sclk[19]_GND_35_o_equal_13_o<19>2)
+     LUT5:I2->O           20   0.097   0.367  XLXI_2202/C0/_n01181 (XLXI_2202/C0/_n0118)
+     FDR:R                     0.349          XLXI_2202/C0/sclk_0
+    ----------------------------------------
+    Total                      3.473ns (1.195ns logic, 2.278ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U66/COUNT_15'
+  Clock period: 1.664ns (frequency: 600.889MHz)
+  Total number of paths / destination ports: 45 / 9
+-------------------------------------------------------------------------
+Delay:               1.664ns (Levels of Logic = 10)
+  Source:            U67/COUNT_0 (FF)
+  Destination:       U67/COUNT_8 (FF)
+  Source Clock:      U66/COUNT_15 rising
+  Destination Clock: U66/COUNT_15 rising
+
+  Data Path: U67/COUNT_0 to U67/COUNT_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.361   0.298  COUNT_0 (COUNT_0)
+     INV:I->O              1   0.113   0.000  Mcount_COUNT_lut<0>_INV_0 (Mcount_COUNT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mcount_COUNT_cy<0> (Mcount_COUNT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<1> (Mcount_COUNT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<2> (Mcount_COUNT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<3> (Mcount_COUNT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<4> (Mcount_COUNT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<5> (Mcount_COUNT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<6> (Mcount_COUNT_cy<6>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_COUNT_cy<7> (Mcount_COUNT_cy<7>)
+     XORCY:CI->O           1   0.370   0.000  Mcount_COUNT_xor<8> (Result<8>)
+     FDCE:D                    0.008          COUNT_8
+    ----------------------------------------
+    Total                      1.664ns (1.366ns logic, 0.298ns route)
+                                       (82.1% logic, 17.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_0'
+  Clock period: 1.124ns (frequency: 889.759MHz)
+  Total number of paths / destination ports: 7 / 4
+-------------------------------------------------------------------------
+Delay:               1.124ns (Levels of Logic = 1)
+  Source:            U86/COUNT_0 (FF)
+  Destination:       U86/COUNT_0 (FF)
+  Source Clock:      U67/COUNT_0 rising
+  Destination Clock: U67/COUNT_0 rising
+
+  Data Path: U86/COUNT_0 to U86/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.361   0.363  COUNT_0 (COUNT_0)
+     INV:I->O              1   0.113   0.279  Mcount_COUNT_xor<0>11_INV_0 (Result<0>)
+     FDCE:D                    0.008          COUNT_0
+    ----------------------------------------
+    Total                      1.124ns (0.482ns logic, 0.642ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_2'
+  Clock period: 1.055ns (frequency: 948.227MHz)
+  Total number of paths / destination ports: 11 / 4
+-------------------------------------------------------------------------
+Delay:               1.055ns (Levels of Logic = 1)
+  Source:            U119/COUNT_0 (FF)
+  Destination:       U119/COUNT_0 (FF)
+  Source Clock:      U67/COUNT_2 rising
+  Destination Clock: U67/COUNT_2 rising
+
+  Data Path: U119/COUNT_0 to U119/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.361   0.293  COUNT_0 (COUNT_0)
+     INV:I->O              1   0.113   0.279  Mmux_COUNT[3]_GND_29_o_mux_8_OUT11_INV_0 (COUNT[3]_GND_29_o_mux_8_OUT<0>)
+     FDCE:D                    0.008          COUNT_0
+    ----------------------------------------
+    Total                      1.055ns (0.482ns logic, 0.573ns route)
+                                       (45.7% logic, 54.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/COUNT_4'
+  Total number of paths / destination ports: 3209251 / 27
+-------------------------------------------------------------------------
+Offset:              26.366ns (Levels of Logic = 61)
+  Source:            sw15 (PAD)
+  Destination:       XLXI_2638/Q1 (FF)
+  Destination Clock: U67/COUNT_4 rising
+
+  Data Path: sw15 to XLXI_2638/Q1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.525  XLXI_2201 (Testrd)
+     begin scope: 'M7:S0'
+     LUT3:I0->O           19   0.097   0.595  Mmux_O11 (O)
+     end scope: 'M7:O'
+     OR4:I3->O             1   0.279   0.693  XLXI_2446 (RDISNOT0)
+     AND2:I0->O            1   0.097   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.697  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.516  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.698  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U173/XLXI_4:S0'
+     LUT3:I0->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U173/XLXI_4:O'
+     begin scope: 'U173/XLXI_6:D1'
+     LUT3:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U173/XLXI_6:O'
+     begin scope: 'XLXI_2646:A<5>'
+     LUT6:I3->O            1   0.097   0.511  GT1_SW5 (N6)
+     LUT5:I2->O            1   0.097   0.693  GT21 (GT)
+     end scope: 'XLXI_2646:GT'
+     OR2:I0->O             1   0.097   0.683  XLXI_2529 (XLXN_13158)
+     AND2:I1->O            9   0.107   0.316  XLXI_2525 (UPDATERWD)
+     begin scope: 'XLXI_2638:CE'
+     FDCE:CE                   0.095          Q1
+    ----------------------------------------
+    Total                     26.366ns (5.163ns logic, 21.203ns route)
+                                       (19.6% logic, 80.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/COUNT_7'
+  Total number of paths / destination ports: 18306056 / 96
+-------------------------------------------------------------------------
+Offset:              27.441ns (Levels of Logic = 61)
+  Source:            sw15 (PAD)
+  Destination:       U28 (FF)
+  Destination Clock: U67/COUNT_7 rising
+
+  Data Path: sw15 to U28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.525  XLXI_2201 (Testrd)
+     begin scope: 'M7:S0'
+     LUT3:I0->O           19   0.097   0.595  Mmux_O11 (O)
+     end scope: 'M7:O'
+     OR4:I3->O             1   0.279   0.693  XLXI_2446 (RDISNOT0)
+     AND2:I0->O            1   0.097   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.698  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.516  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.698  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U174/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U174/XLXI_3:O'
+     begin scope: 'U174/XLXI_6:D0'
+     LUT4:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U174/XLXI_6:O'
+     begin scope: 'XLXI_2461:B<3>'
+     LUT4:I1->O            2   0.097   0.283  LT21 (LT)
+     end scope: 'XLXI_2461:LT'
+     INV:I->O              1   0.511   0.693  XLXI_2470 (XLXN_13037)
+     OR2:I0->O             2   0.097   0.688  XLXI_2473 (P1ADD)
+     AND2:I1->O            1   0.107   0.683  U29 (XLXN_12237)
+     OR2:I1->O             1   0.107   0.279  U31 (INT_NET10)
+     FDCE:CE                   0.095          U28
+    ----------------------------------------
+    Total                     27.441ns (5.684ns logic, 21.757ns route)
+                                       (20.7% logic, 79.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK_NP2B'
+  Total number of paths / destination ports: 27 / 8
+-------------------------------------------------------------------------
+Offset:              1.842ns (Levels of Logic = 3)
+  Source:            KEYINPOUT<7> (PAD)
+  Destination:       XLXI_2202/C0/DecodeOut_3 (FF)
+  Destination Clock: CLOCK_NP2B rising
+
+  Data Path: KEYINPOUT<7> to XLXI_2202/C0/DecodeOut_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.001   0.575  KEYINPOUT_7_IBUF (KEYINPOUT_7_IBUF)
+     LUT4:I0->O            1   0.097   0.683  XLXI_2202/C0/_n0309_inv_SW0 (N6)
+     LUT6:I1->O            4   0.097   0.293  XLXI_2202/C0/_n0309_inv (XLXI_2202/C0/_n0309_inv)
+     FDE:CE                    0.095          XLXI_2202/C0/DecodeOut_0
+    ----------------------------------------
+    Total                      1.842ns (0.290ns logic, 1.552ns route)
+                                       (15.7% logic, 84.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/COUNT_2'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.302ns (Levels of Logic = 1)
+  Source:            P1PLAY_NP2B (PAD)
+  Destination:       U76 (FF)
+  Destination Clock: U67/COUNT_2 rising
+
+  Data Path: P1PLAY_NP2B to U76
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.293  P1PLAY_BUF (P1PLAY)
+     FD:D                      0.008          U76
+    ----------------------------------------
+    Total                      0.302ns (0.009ns logic, 0.293ns route)
+                                       (3.0% logic, 97.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_NP2B'
+  Total number of paths / destination ports: 1077606 / 20
+-------------------------------------------------------------------------
+Offset:              33.138ns (Levels of Logic = 68)
+  Source:            XLXI_2202/C0/DecodeOut_0 (FF)
+  Destination:       A0_NB2P (PAD)
+  Source Clock:      CLOCK_NP2B rising
+
+  Data Path: XLXI_2202/C0/DecodeOut_0 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.383  XLXI_2202/C0/DecodeOut_0 (XLXI_2202/C0/DecodeOut_0)
+     begin scope: 'M7:D1'
+     LUT3:I1->O           19   0.097   0.595  Mmux_O11 (O)
+     end scope: 'M7:O'
+     OR4:I3->O             1   0.279   0.693  XLXI_2446 (RDISNOT0)
+     AND2:I0->O            1   0.097   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.698  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.515  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.697  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U174/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U174/XLXI_3:O'
+     begin scope: 'U174/XLXI_6:D0'
+     LUT4:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U174/XLXI_6:O'
+     begin scope: 'XLXI_2461:B<3>'
+     LUT4:I1->O            2   0.097   0.283  LT21 (LT)
+     end scope: 'XLXI_2461:LT'
+     INV:I->O              1   0.511   0.693  XLXI_2470 (XLXN_13037)
+     OR2:I0->O             2   0.097   0.698  XLXI_2473 (P1ADD)
+     AND2:I0->O            1   0.097   0.556  U25 (XLXN_12324)
+     OR3:I2->O             1   0.234   0.683  U24 (XLXN_12343)
+     AND2B1:I1->O          6   0.107   0.716  U23 (ADD)
+     AND2:I0->O            2   0.097   0.697  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.097   0.693  U35 (BPDS)
+     OR2B1:I0->O           1   0.097   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          DISPEN0_BUF (A0_NB2P)
+    ----------------------------------------
+    Total                     33.138ns (6.775ns logic, 26.363ns route)
+                                       (20.4% logic, 79.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U67/COUNT_7'
+  Total number of paths / destination ports: 15953943 / 38
+-------------------------------------------------------------------------
+Offset:              33.050ns (Levels of Logic = 69)
+  Source:            U122/Q0 (FF)
+  Destination:       A0_NB2P (PAD)
+  Source Clock:      U67/COUNT_7 rising
+
+  Data Path: U122/Q0 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.361   0.295  Q0 (Q0)
+     end scope: 'U122:Q0'
+     begin scope: 'M7:D0'
+     LUT3:I2->O           19   0.097   0.595  Mmux_O11 (O)
+     end scope: 'M7:O'
+     OR4:I3->O             1   0.279   0.693  XLXI_2446 (RDISNOT0)
+     AND2:I0->O            1   0.097   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.698  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.515  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.697  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U174/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U174/XLXI_3:O'
+     begin scope: 'U174/XLXI_6:D0'
+     LUT4:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U174/XLXI_6:O'
+     begin scope: 'XLXI_2461:B<3>'
+     LUT4:I1->O            2   0.097   0.283  LT21 (LT)
+     end scope: 'XLXI_2461:LT'
+     INV:I->O              1   0.511   0.693  XLXI_2470 (XLXN_13037)
+     OR2:I0->O             2   0.097   0.698  XLXI_2473 (P1ADD)
+     AND2:I0->O            1   0.097   0.556  U25 (XLXN_12324)
+     OR3:I2->O             1   0.234   0.683  U24 (XLXN_12343)
+     AND2B1:I1->O          6   0.107   0.716  U23 (ADD)
+     AND2:I0->O            2   0.097   0.697  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.097   0.693  U35 (BPDS)
+     OR2B1:I0->O           1   0.097   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          DISPEN0_BUF (A0_NB2P)
+    ----------------------------------------
+    Total                     33.050ns (6.775ns logic, 26.275ns route)
+                                       (20.5% logic, 79.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U67/COUNT_0'
+  Total number of paths / destination ports: 193 / 23
+-------------------------------------------------------------------------
+Offset:              2.880ns (Levels of Logic = 6)
+  Source:            M5/XLXI_10/q_tmp (FF)
+  Destination:       AA (PAD)
+  Source Clock:      U67/COUNT_0 rising
+
+  Data Path: M5/XLXI_10/q_tmp to AA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.361   0.534  q_tmp (q_tmp)
+     end scope: 'M5/XLXI_10:Q'
+     begin scope: 'M5/XLXI_11/XLXI_114:S0'
+     LUT4:I1->O            7   0.097   0.307  Mmux_O11 (O)
+     end scope: 'M5/XLXI_11/XLXI_114:O'
+     ROM16X1:A0->O         1   0.511   0.279  M5/U1 (M5/XLXN_98)
+     INV:I->O              1   0.511   0.279  M5/XLXI_29 (AA_OBUF)
+     OBUF:I->O                 0.000          AA_OBUF (AA)
+    ----------------------------------------
+    Total                      2.880ns (1.480ns logic, 1.400ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U67/COUNT_4'
+  Total number of paths / destination ports: 966708 / 5
+-------------------------------------------------------------------------
+Offset:              32.578ns (Levels of Logic = 67)
+  Source:            XLXI_2526/Q0 (FF)
+  Destination:       A0_NB2P (PAD)
+  Source Clock:      U67/COUNT_4 rising
+
+  Data Path: XLXI_2526/Q0 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.698  Q0 (Q0)
+     end scope: 'XLXI_2526:Q0'
+     OR2:I0->O             1   0.097   0.683  XLXI_2391 (XLXN_12562)
+     AND2:I1->O            1   0.107   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.698  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.515  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.697  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U174/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U174/XLXI_3:O'
+     begin scope: 'U174/XLXI_6:D0'
+     LUT4:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U174/XLXI_6:O'
+     begin scope: 'XLXI_2461:B<3>'
+     LUT4:I1->O            2   0.097   0.283  LT21 (LT)
+     end scope: 'XLXI_2461:LT'
+     INV:I->O              1   0.511   0.693  XLXI_2470 (XLXN_13037)
+     OR2:I0->O             2   0.097   0.698  XLXI_2473 (P1ADD)
+     AND2:I0->O            1   0.097   0.556  U25 (XLXN_12324)
+     OR3:I2->O             1   0.234   0.683  U24 (XLXN_12343)
+     AND2B1:I1->O          6   0.107   0.716  U23 (ADD)
+     AND2:I0->O            2   0.097   0.697  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.097   0.693  U35 (BPDS)
+     OR2B1:I0->O           1   0.097   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          DISPEN0_BUF (A0_NB2P)
+    ----------------------------------------
+    Total                     32.578ns (6.506ns logic, 26.072ns route)
+                                       (20.0% logic, 80.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U66/COUNT_15'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              3.825ns (Levels of Logic = 6)
+  Source:            U67/COUNT_8 (FF)
+  Destination:       A0_NB2P (PAD)
+  Source Clock:      U66/COUNT_15 rising
+
+  Data Path: U67/COUNT_8 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.361   0.693  COUNT_8 (COUNT_8)
+     end scope: 'U67:Q<8>'
+     OR2B1:I1->O           1   0.107   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          DISPEN0_BUF (A0_NB2P)
+    ----------------------------------------
+    Total                      3.825ns (0.779ns logic, 3.046ns route)
+                                       (20.4% logic, 79.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1151111 / 16
+-------------------------------------------------------------------------
+Delay:               32.920ns (Levels of Logic = 69)
+  Source:            sw15 (PAD)
+  Destination:       A0_NB2P (PAD)
+
+  Data Path: sw15 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.525  XLXI_2201 (Testrd)
+     begin scope: 'M7:S0'
+     LUT3:I0->O           19   0.097   0.595  Mmux_O11 (O)
+     end scope: 'M7:O'
+     OR4:I3->O             1   0.279   0.693  XLXI_2446 (RDISNOT0)
+     AND2:I0->O            1   0.097   0.683  XLXI_2388 (XLXN_12621)
+     OR2:I1->O             4   0.107   0.697  XLXI_2389 (DECISION0)
+     AND2:I1->O            5   0.107   0.530  XLXI_2328 (EA0)
+     begin scope: 'XLXI_2435:E'
+     LUT3:I0->O            1   0.097   0.556  Mmux_d_tmp31 (D2)
+     end scope: 'XLXI_2435:D2'
+     OR3:I2->O             1   0.234   0.295  XLXI_2480 (P1SEL2)
+     begin scope: 'U152/XLXI_116:D0'
+     LUT4:I3->O            3   0.097   0.703  Mmux_O11 (O)
+     end scope: 'U152/XLXI_116:O'
+     OR2:I0->O             8   0.097   0.544  U154 (ENCPSEL1)
+     begin scope: 'U157/XLXI_6:S0'
+     LUT4:I1->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U157/XLXI_6:O'
+     begin scope: 'U158/XLXI_115:D1'
+     LUT4:I3->O           15   0.097   0.444  Mmux_O11 (O)
+     end scope: 'U158/XLXI_115:O'
+     begin scope: 'U162:A1'
+     LUT4:I2->O            1   0.097   0.295  EQ_SW0 (N01)
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.698  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.515  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I0->O           11   0.097   0.740  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     OR2:I0->O             1   0.097   0.683  XLXI_2455 (isnsdnotzero)
+     AND2:I1->O            3   0.107   0.305  XLXI_2390 (DECISION1)
+     begin scope: 'XLXI_2387:D0'
+     LUT2:I1->O            3   0.097   0.305  Mmux_O11 (O)
+     end scope: 'XLXI_2387:O'
+     begin scope: 'XLXI_2393:S0'
+     LUT3:I2->O            4   0.097   0.293  Mmux_O11 (O)
+     end scope: 'XLXI_2393:O'
+     INV:I->O              1   0.511   0.693  XLXI_2337 (XLXN_12735)
+     AND3:I0->O            2   0.097   0.697  XLXI_2331 (EA3)
+     OR2:I0->O             4   0.097   0.525  XLXI_2433 (XLXN_12769)
+     begin scope: 'XLXI_2436:E'
+     LUT3:I0->O            1   0.097   0.693  Mmux_d_tmp41 (D3)
+     end scope: 'XLXI_2436:D3'
+     OR3:I0->O             1   0.097   0.295  XLXI_2481 (P1SEL3)
+     begin scope: 'U152/XLXI_117:D0'
+     LUT4:I3->O            4   0.097   0.707  Mmux_O11 (O)
+     end scope: 'U152/XLXI_117:O'
+     OR2:I0->O            14   0.097   0.571  U153 (ENCPSEL0)
+     begin scope: 'U170/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U170/XLXI_3:O'
+     begin scope: 'U170/XLXI_6:D0'
+     LUT4:I1->O            2   0.097   0.384  Mmux_O11 (O)
+     end scope: 'U170/XLXI_6:O'
+     begin scope: 'U171:A0'
+     LUT2:I0->O            2   0.097   0.384  Madd_adsu_p.adsu_tmp_Madd_lut<0>1 (Madd_adsu_p.adsu_tmp_Madd_lut<0>)
+     LUT2:I0->O           14   0.097   0.571  Madd_adsu_p.adsu_tmp_Madd_xor<0>11 (S0)
+     end scope: 'U171:S0'
+     begin scope: 'U174/XLXI_3:S0'
+     LUT3:I0->O            1   0.097   0.511  Mmux_O11 (O)
+     end scope: 'U174/XLXI_3:O'
+     begin scope: 'U174/XLXI_6:D0'
+     LUT4:I1->O            5   0.097   0.530  Mmux_O11 (O)
+     end scope: 'U174/XLXI_6:O'
+     begin scope: 'XLXI_2461:B<3>'
+     LUT4:I1->O            2   0.097   0.283  LT21 (LT)
+     end scope: 'XLXI_2461:LT'
+     INV:I->O              1   0.511   0.693  XLXI_2470 (XLXN_13037)
+     OR2:I0->O             2   0.097   0.698  XLXI_2473 (P1ADD)
+     AND2:I0->O            1   0.097   0.556  U25 (XLXN_12324)
+     OR3:I2->O             1   0.234   0.683  U24 (XLXN_12343)
+     AND2B1:I1->O          6   0.107   0.716  U23 (ADD)
+     AND2:I0->O            2   0.097   0.697  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.097   0.693  U35 (BPDS)
+     OR2B1:I0->O           1   0.097   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          DISPEN0_BUF (A0_NB2P)
+    ----------------------------------------
+    Total                     32.920ns (6.415ns logic, 26.505ns route)
+                                       (19.5% logic, 80.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK_NP2B
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_NP2B     |    3.473|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U66/COUNT_15
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U66/COUNT_15   |    1.664|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U67/COUNT_0    |    1.124|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U67/COUNT_2    |    1.055|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_4
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_NP2B     |   26.584|         |         |         |
+U67/COUNT_2    |    3.457|         |         |         |
+U67/COUNT_4    |   26.024|         |         |         |
+U67/COUNT_7    |   26.496|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_7
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_NP2B     |   27.660|         |         |         |
+U66/COUNT_15   |    0.658|         |         |         |
+U67/COUNT_2    |    6.360|         |         |         |
+U67/COUNT_4    |   27.100|         |         |         |
+U67/COUNT_7    |   27.571|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 19.26 secs
+ 
+--> 
+
+Total memory usage is 408676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :   51 (   0 filtered)
+

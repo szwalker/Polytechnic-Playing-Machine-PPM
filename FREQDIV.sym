@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="FREQDIV">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-8-24T21:32:39</timestamp>
+    <pin polarity="Input" x="0" y="-320" name="ONEHUNDREDMEGAHERTZ" />
+    <pin polarity="Input" x="0" y="-112" name="RESET" />
+    <pin polarity="Output" x="784" y="-384" name="ONEHERTZ" />
+    <pin polarity="Output" x="784" y="-176" name="ONEHUNDREDHERTZ" />
+    <pin polarity="Output" x="784" y="-288" name="FOURHERTZ" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="400" y="-480" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-320" type="pin ONEHUNDREDMEGAHERTZ" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-112" type="pin RESET" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="712" y="-384" type="pin ONEHERTZ" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="712" y="-176" type="pin ONEHUNDREDHERTZ" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="712" y="-288" type="pin FOURHERTZ" />
+        <line x2="784" y1="-288" y2="-288" x1="720" />
+        <line x2="784" y1="-384" y2="-384" x1="720" />
+        <line x2="0" y1="-112" y2="-112" x1="64" />
+        <line x2="0" y1="-320" y2="-320" x1="64" />
+        <rect width="656" x="64" y="-476" height="492" />
+        <line x2="784" y1="-176" y2="-176" x1="720" />
+    </graph>
+</symbol>

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=S:\Exp 3 - Copy\ppmmvsh\ppmmvsh.ncd
+OUTFILE=S:\Exp 3 - Copy\ppmmvsh\ppmmvsh.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=S:\Exp 3 - Copy\ppmmvsh
+LICENSE=WebPack
+USER_INFO=174150314_1777501427_210662049_441

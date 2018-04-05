@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="clockblock">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-8-26T20:53:33</timestamp>
+    <pin polarity="Input" x="0" y="-320" name="SET0" />
+    <pin polarity="Input" x="0" y="-384" name="SET1" />
+    <pin polarity="Input" x="0" y="-448" name="SET2" />
+    <pin polarity="Input" x="0" y="-512" name="SET3" />
+    <pin polarity="Input" x="0" y="-576" name="SET4" />
+    <pin polarity="Input" x="0" y="-640" name="SET5" />
+    <pin polarity="Input" x="0" y="-704" name="SET6" />
+    <pin polarity="Input" x="0" y="-768" name="SET7" />
+    <pin polarity="Input" x="0" y="-1024" name="SETHR" />
+    <pin polarity="Input" x="0" y="-960" name="SETMIN" />
+    <pin polarity="Input" x="0" y="-896" name="SETSEC" />
+    <pin polarity="Input" x="0" y="-1088" name="SHOWTIME" />
+    <pin polarity="Input" x="0" y="-176" name="TIMER" />
+    <pin polarity="Input" x="0" y="-112" name="PAUSE" />
+    <pin polarity="Input" x="0" y="-48" name="TIMERVALUE" />
+    <pin polarity="Output" x="560" y="576" name="ONEHERTZ" />
+    <pin polarity="Output" x="560" y="-816" name="SETMINUTES" />
+    <pin polarity="Output" x="560" y="-880" name="SETHOURS" />
+    <pin polarity="Output" x="560" y="-752" name="SETSECONDS" />
+    <pin polarity="Output" x="560" y="-400" name="CEN(7:0)" />
+    <pin polarity="Output" x="560" y="-464" name="SL(7:0)" />
+    <pin polarity="Output" x="560" y="-528" name="ML(7:0)" />
+    <pin polarity="Output" x="560" y="-592" name="HL(7:0)" />
+    <pin polarity="Output" x="560" y="432" name="SHOWTIMER" />
+    <pin polarity="Output" x="560" y="-32" name="TIMERCEN(7:0)" />
+    <pin polarity="Output" x="560" y="-112" name="TIMERSL(7:0)" />
+    <pin polarity="Output" x="560" y="-176" name="TIMERML(7:0)" />
+    <pin polarity="Output" x="560" y="-1088" name="MODECLK" />
+    <pin polarity="Output" x="560" y="-1024" name="MODETIME" />
+    <pin polarity="Output" x="560" y="-240" name="TIMERHL(7:0)" />
+    <pin polarity="Output" x="560" y="128" name="STR2" />
+    <pin polarity="Output" x="560" y="192" name="STR1" />
+    <pin polarity="Output" x="560" y="256" name="STR0" />
+    <pin polarity="Input" x="0" y="256" name="CLOCKINP" />
+    <pin polarity="Input" x="0" y="96" name="RST" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="268" y="-1168" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-320" type="pin SET0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-384" type="pin SET1" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-448" type="pin SET2" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-512" type="pin SET3" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-576" type="pin SET4" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-640" type="pin SET5" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-704" type="pin SET6" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-768" type="pin SET7" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1024" type="pin SETHR" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-960" type="pin SETMIN" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-896" type="pin SETSEC" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1088" type="pin SHOWTIME" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-176" type="pin TIMER" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-112" type="pin PAUSE" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-48" type="pin TIMERVALUE" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="576" type="pin ONEHERTZ" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-816" type="pin SETMINUTES" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-880" type="pin SETHOURS" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-752" type="pin SETSECONDS" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-400" type="pin CEN(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-464" type="pin SL(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-528" type="pin ML(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-592" type="pin HL(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="432" type="pin SHOWTIMER" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-32" type="pin TIMERCEN(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-112" type="pin TIMERSL(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-176" type="pin TIMERML(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-1088" type="pin MODECLK" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-1024" type="pin MODETIME" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-240" type="pin TIMERHL(7:0)" />
+        <line x2="0" y1="-1088" y2="-1088" x1="64" />
+        <line x2="0" y1="-1024" y2="-1024" x1="64" />
+        <line x2="0" y1="-960" y2="-960" x1="64" />
+        <line x2="0" y1="-896" y2="-896" x1="64" />
+        <line x2="0" y1="-768" y2="-768" x1="64" />
+        <line x2="0" y1="-704" y2="-704" x1="64" />
+        <line x2="0" y1="-640" y2="-640" x1="64" />
+        <line x2="0" y1="-576" y2="-576" x1="64" />
+        <line x2="0" y1="-512" y2="-512" x1="64" />
+        <line x2="0" y1="-448" y2="-448" x1="64" />
+        <line x2="0" y1="-384" y2="-384" x1="64" />
+        <line x2="0" y1="-320" y2="-320" x1="64" />
+        <line x2="0" y1="-176" y2="-176" x1="64" />
+        <line x2="0" y1="-112" y2="-112" x1="64" />
+        <line x2="0" y1="-48" y2="-48" x1="64" />
+        <line x2="560" y1="-880" y2="-880" x1="496" />
+        <line x2="560" y1="-816" y2="-816" x1="496" />
+        <line x2="560" y1="-752" y2="-752" x1="496" />
+        <line x2="560" y1="432" y2="432" x1="496" />
+        <line x2="560" y1="576" y2="576" x1="496" />
+        <line x2="560" y1="-1088" y2="-1088" x1="496" />
+        <line x2="560" y1="-1024" y2="-1024" x1="496" />
+        <rect width="64" x="496" y="-604" height="24" />
+        <line x2="560" y1="-592" y2="-592" x1="496" />
+        <rect width="64" x="496" y="-540" height="24" />
+        <line x2="560" y1="-528" y2="-528" x1="496" />
+        <line x2="560" y1="-464" y2="-464" x1="496" />
+        <rect width="64" x="496" y="-476" height="24" />
+        <rect width="64" x="496" y="-412" height="24" />
+        <line x2="560" y1="-400" y2="-400" x1="496" />
+        <rect width="64" x="496" y="-252" height="24" />
+        <line x2="560" y1="-240" y2="-240" x1="496" />
+        <rect width="64" x="496" y="-188" height="24" />
+        <line x2="560" y1="-176" y2="-176" x1="496" />
+        <rect width="64" x="496" y="-124" height="24" />
+        <line x2="560" y1="-112" y2="-112" x1="496" />
+        <rect width="64" x="496" y="-44" height="24" />
+        <line x2="560" y1="-32" y2="-32" x1="496" />
+        <rect width="432" x="64" y="-1152" height="1788" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="128" type="pin STR2" />
+        <line x2="560" y1="128" y2="128" x1="496" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="192" type="pin STR1" />
+        <line x2="560" y1="192" y2="192" x1="496" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="256" type="pin STR0" />
+        <line x2="560" y1="256" y2="256" x1="496" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="256" type="pin CLOCKINP" />
+        <line x2="0" y1="256" y2="256" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="96" type="pin RST" />
+        <line x2="0" y1="96" y2="96" x1="64" />
+    </graph>
+</symbol>

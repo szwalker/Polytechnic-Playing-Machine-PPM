@@ -1,0 +1,7 @@
+vhdl work "X74_157.vhf"
+vhdl work "Decoder.vhd"
+vhdl work "X74_153.vhf"
+vhdl work "SEVENSEGMENTDECODER.vhf"
+vhdl work "PmodKEYPAD.vhd"
+vhdl work "CODEGEN.vhf"
+vhdl work "ppmmvsh.vhf"
